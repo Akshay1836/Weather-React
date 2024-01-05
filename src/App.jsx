@@ -58,22 +58,22 @@ function App() {
     <>
     <div className="h-screen w-full relative">
     <img
-      className="h-full w-full bg-cover bg-center opacity-90 "
+      className="h-full w-full bg-cover bg-center bg-fixed opacity-90 "
       src="https://images.pexels.com/photos/7084222/pexels-photo-7084222.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
       alt="nature image"
     />
     <div className=" w-full flex items-center justify-center flex-col absolute top-12">
 
-    <div className="p-2 m-4 sm:w-1/2 md:w-1/3 2xl:w-1/4 inline-flex bg-white/10 rounded-md">
+    <div className="p-2 m-4 sm:w-1/2 md:w-1/3  inline-flex bg-white/10 rounded-md">
     <input className="h-10 sm:w-1/2 md:w-full rounded-md border text-white border-black/30 bg-transparent px-3 py-2 text-sm"
-          placeholder="Search Your location"
+          placeholder="Search Your Location"
           type="search"
           onChange={(e) => setPlace(e.target.value)}
         />
         <button className="rounded-full bg-cyan-800 px-6 py-2 text-md font-semibold text-white shadow-sm hover:text-cyan-800/80 hover:bg-white mx-6" onClick={search}>Search</button>
     </div>
-      <div class="sm:w-1/2 md:w-1/3 flex items-center justify-center mt-4">
-        <div class="flex flex-col bg-white/40 rounded-lg p-4 w-full max-w-xs">
+      <div class="sm:w-1/3 md:w-1/4 flex items-center justify-center mt-4">
+        <div class="flex flex-col bg-white/40 rounded-lg p-4 w-full">
           <div class=" text-xl text-black">Location: {data.name}</div>
           {/* <div class="text-sm text-gray-500">{date}</div> */}
           <div class="mt-6 text-6xl self-center inline-flex items-center justify-center rounded-lg text-black/90 h-24 w-24 opacity-40">
